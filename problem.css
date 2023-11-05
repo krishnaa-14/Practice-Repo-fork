@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s ease;
+}
+
+
+/* html{
+    transition: all 0.1s ease;
+} */
+
+body {
+    overflow-x: hidden;
+}
+
+/* Navbar Section CSS */
+.btn {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border-radius: 0.8rem;
+    border: none;
+}
+
+.colored-toast.swal2-icon-success {
+    background-color: #49A74C !important;
+}
+
+.colored-toast.swal2-icon-warning {
+    background-color: #ff0000 !important;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #49A74C !important;
+}
+
+.colored-toast .swal2-title {
+    color: white;
+}
+
+.colored-toast .swal2-close {
+    color: white;
+}
+
+.colored-toast .swal2-html-container {
+    color: white;
+}
+
+
+.mybutton {
+    outline: 2px solid #49A74C;
+    padding: 0.75rem 1.3rem;
+}
+
+.mybutton:hover {
+    background: #fff;
+    color: #49A74C;
+    transition: 0.23s ease-in-out;
+}
+
+.mybutton span:hover {
+    margin-left: 5px;
+    transition: 0.23s ease-in-out;
+}
+
+.navbar {
+    padding: 1.2rem;
+    background-color: #fff;
+    font-size: 1.3rem;
+}
+
+.navbar-brand {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.navbar-brand .heading {
+    font-size: 2rem;
+    color: #49A74C;
+    font-weight: 800;
+}
+
+.navbar-brand .logo_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand .logo_image img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.navbar-nav {
+    gap: 1.3rem;
+}
+
+.navbar-expand-lg .navbar-nav i {
+    font-size: 2rem;
+    cursor: pointer;
+    margin: auto;
+    color: #49A74C;
+}
+
+/* Header Section CSS */
+.main_container {
+    display: flex;
+    padding: 4rem;
+    gap: 3rem;
+
+    background: linear-gradient(to bottom, #49A74C, #2AF598, #fecf7e, #f7e167, #fff);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.main_container .problem_section {
+    width: 65%;
+    padding: 1.5rem;
+}
+
+.main_container .problem_section .header_section .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_container .problem_section .header_section .wrapper .card {
+    background: #fff;
+    width: calc(33% - 20px);
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main_container .problem_section .header_section .wrapper .card .circle {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.main_container .problem_section .header_section .wrapper .card .circle .box,
+.main_container .problem_section .header_section .wrapper .card .circle .box span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.main_container .problem_section .header_section .wrapper .card .circle .box {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: all 0.2s;
+}
+
+/*  */
+
+.main_container .problem_section .header_section .wrapper .card .circle:hover .box {
+    transform: translate(-50%, -50%) scale(0.91);
+}
+
+.main_container .problem_section .header_section .wrapper .card .circle .box {
+
+    background: rgb(55, 40, 2);
+    background: linear-gradient(167deg, rgb(2, 55, 2) 0%, #48f954 50%, #e7e7e7 100%);
+}
+
+.main_container .problem_section .header_section .wrapper .js .circle .box {
+    background: rgb(55, 40, 2);
+    background: linear-gradient(167deg, rgba(55, 40, 2, 1) 0%, rgba(255, 189, 8, 1) 50%, #e7e7e7 100%);
+}
+
+.main_container .problem_section .header_section .wrapper .react .circle .box {
+    background: rgb(55, 40, 2);
+    background: linear-gradient(167deg, rgb(75, 10, 3) 0%, rgb(255, 82, 8) 50%, #e7e7e7 100%);
+}
+
+.main_container .problem_section .header_section .wrapper .card .circle .box span,
+.main_container .problem_section .header_section .wrapper .card .text {
+    background: -webkit-linear-gradient(left, #49A74C, #49A74C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main_container .problem_section .header_section .wrapper .js .circle .box span,
+.main_container .problem_section .header_section .wrapper .js .text {
+    background: -webkit-linear-gradient(left, #ffbb02, #ffbb02);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main_container .problem_section .header_section .wrapper .react .circle .box span,
+.main_container .problem_section .header_section .wrapper .react .text {
+    background: -webkit-linear-gradient(left, #ff0000, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.main_container .problem_section .header_section .wrapper .card .circle .box span {
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    transform: translate(-45%, -45%);
+    transition: all 0.1s;
+}
+
+.main_container .problem_section .header_section .wrapper .card .circle:hover .box span {
+    transform: translate(-45%, -45%) scale(1.09);
+}
+
+.main_container .problem_section .header_section .wrapper .card .circle .box span {
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    background: -webkit-linear-gradient(left, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main_container .problem_section .header_section .wrapper .card .text {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.main_container .problem_section .header_section .wrapper .card {
+    background: #f8f8f8dd;
+    cursor: pointer;
+    border-radius: 0.95rem;
+}
+
+
+@media(max-width: 753px) {
+    .main_container .problem_section .header_section .wrapper {
+        max-width: 700px;
+    }
+
+    .main_container .problem_section .header_section .wrapper .card {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 505px) {
+    .main_container .problem_section .header_section .wrapper {
+        max-width: 500px;
+    }
+
+    .main_container .problem_section .header_section .wrapper .card {
+        width: 100%;
+    }
+}
+
+
+/* -------- PROGRESS BAR CSS ENDS HERE ------- */
+
+.main_container .problem_section .header_section h1 span {
+    color: #fff;
+}
+
+.main_container .sidebar {
+    width: 35%;
+}
+
+.main_container .sidebar .status_chart{
+    margin-top: 8rem;
+    padding: 2rem 4rem;
+    background:#fff;
+    border-radius: 1rem;
+
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+
+.main_container .sidebar .status_chart .chart_heading{
+    margin: auto;
+}
+.main_container .sidebar .status_chart .chart_heading h3 {
+    color: #000000;
+}
+
+
+.main_container .sidebar .status_chart .chart canvas{
+    height: 15rem;
+    width: 15rem;
+    color: #000000;
+}
+
+/* Difficulty Section */
+.diffi_section {
+    margin: 2rem 0;
+}
+
+.diffi_section h2 {
+    color: #49A74C;
+}
+
+.diffi_section h2 .med {
+    color: #ffbe0b;
+}
+
+.diffi_section h2 .hard {
+    color: #ff0000;
+}
+
+.diffi_section .accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.diffi_section .accordion-item {
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    border: none;
+    position: relative;
+    margin: 0.5rem 0;
+}
+
+.diffi_section .accordion-item .accordion-header button {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.diffi_section .accordion-item .accordion-header .easy {
+    color: #fff;
+    border: 3px solid #49A74C;
+    border-radius: 0.5rem;
+
+    background: #49A74C;
+    background: -webkit-linear-gradient(to left, #f0f0f0, #49A74C);
+    background: linear-gradient(to left, #f0f0f0, #49A74C);
+
+    padding: 1.5rem;
+}
+
+.diffi_section .accordion-item .accordion-header .medium {
+    color: #fff;
+    border: 3px solid #ffbe0b;
+    border-radius: 0.5rem;
+
+    background: #ffbe0b;
+    background: -webkit-linear-gradient(to left, #f0f0f0, #ffbe0b);
+    background: linear-gradient(to left, #f0f0f0, #ffbe0b);
+
+    padding: 1.5rem;
+}
+
+.diffi_section .accordion-item .accordion-header .hard {
+    color: #fff;
+    border: 3px solid #ff0000;
+    border-radius: 0.5rem;
+
+    background: #ff0000;
+    background: -webkit-linear-gradient(to left, #f0f0f0, #ff0000);
+    background: linear-gradient(to left, #f0f0f0, #ff0000);
+
+    padding: 1.5rem;
+}
+
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .topic_headings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .topic_headings p {
+    border: 2px solid #444;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .each_problem {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+
+    gap: 4rem;
+}
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .each_problem .temp {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .each_problem div {
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .each_problem .problem_name {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .each_problem .problem_info a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .each_problem .action select {
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.3rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .each_problem .action {
+    background: repeating-linear-gradient(-45deg,
+            #f0f0f0,
+            #f0f0f0, 25%,
+            shade(#f0f0f0, 10%) 25%,
+            shade(#f0f0f0, 10%) 50%,
+            #f0f0f0, 50%) top left fixed;
+}
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .each_problem a {
+    text-decoration: none;
+}
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .each_problem .temp .link a:hover {
+    border-bottom: 1px solid #fff;
+    transition: 0.05s ease-in-out;
+    scale: 1.03;
+}
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .each_problem .temp .problem_info .solution a:hover {
+    scale: 1.5;
+}
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .easy_box {
+    background: #49A74C;
+}
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .medium_box {
+    background: #ffbb02;
+}
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .hard_box {
+    background: #ff0000;
+}
+
+/* Stripes CSS Background */
+.diffi_section .accordion-item .accordion-collapse .accordion-body .revisit {
+    background-image: linear-gradient(45deg, #17252a 25%, #2b7a78 25%, #2b7a78 50%, #17252a 50%, #17252a 75%, #2b7a78 75%, #2b7a78 100%);
+    background-size: 30px 30px;
+}
+
+.diffi_section .accordion-item .accordion-collapse .accordion-body .done {
+    background-image: linear-gradient(45deg, #ff0bb6 25%, #17252a 25%, #17252a 50%, #ff0bb6 50%, #ff0bb6 75%, #17252a 75%, #17252a 100%);
+    background-size: 30px 30px;
+}
+
+
+/* Footer section CSS */
+.footer_section {
+    display: flex;
+    justify-content: space-between;
+
+    background-image: url(./images/wave.svg);
+    background-size: cover;
+    color: #000000;
+
+    padding: 2rem 4rem;
+    transition: 1.5s;
+}
+
+.footer_section .footer_heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 2rem;
+    width: 40%;
+}
+
+.footer_section .footer_heading .footer_heading_image {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.footer_section .footer_heading .footer_heading_content {
+    text-align: justify;
+}
+
+.footer_section .footer_heading .footer_heading_image .image {
+    display: flex;
+}
+
+.footer_section .footer_heading .footer_heading_image .image img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 2px solid #000000;
+    border-radius: 50%;
+}
+
+.footer_section .footer_shortcuts {
+    width: 30%;
+}
+
+.footer_section .footer_shortcuts .shortcut_links {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.footer_section .footer_shortcuts .social_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 2rem 0;
+    gap: 1.5rem;
+}
+
+.footer_section .footer_shortcuts .social_icons .icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer_section .footer_shortcuts .social_icons .icons a {
+    font-size: 2rem;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer_section .footer_shortcuts .social_icons .icons a:hover {
+    scale: 1.15;
+}
+
+
+
+.footer_section .footer_shortcuts .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* media query */
+@media screen and (max-width: 1000px) {
+    .main_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_container .problem_section {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 0;
+        visibility: hidden;
+    }
+
+    .diffi_section {
+        margin: 0;
+    }
+
+    .footer_section {
+        padding-bottom: 5rem;
+    }
+}

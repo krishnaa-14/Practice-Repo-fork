@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Problems</title>
+
+    <!-- SWEET ALERT STYLE SHEET -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500&family=Roboto:wght@100;300;400&family=Tilt+Prism&family=Work+Sans:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="icon" type="image/x-icon" href="./images/binary-code.png">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
+    <link rel="stylesheet" href="./problem.css">
+</head>
+
+<body>
+    <!-- NAVBAR SECTION -->
+    <div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html" target="_blank">
+                    <div class="logo_image">
+                        <img src="./images/binary-code.png" alt="logo">
+                    </div>
+                    <div class="heading">
+                        Saviour 75
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <a class="nav-link active" aria-current="page" href="./index.html" target="_blank">Home</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                        <i class="fas fa-moon" id="toggleDark"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Container Section -->
+    <section class="main_container" data-aos="zoom-in">
+
+        <div class="problem_section">
+
+            <!-- Heading Section -->
+            <div class="header_section">
+                <h1>Saviour 75 Sheet - <span>Top Coding Interview Problems</span></h1>
+
+                <div class="wrapper">
+
+                    <div class="card">
+                        <div class="circle">
+                            <div class="bar"></div>
+                            <div class="box"><span></span></div>
+                        </div>
+                        <div class="text">Easy</div>
+                    </div>
+
+                    <div class="card js">
+                        <div class="circle">
+                            <div class="bar"></div>
+                            <div class="box"><span></span></div>
+                        </div>
+                        <div class="text">Medium</div>
+                    </div>
+
+                    <div class="card react">
+                        <div class="circle">
+                            <div class="bar"></div>
+                            <div class="box"><span></span></div>
+                        </div>
+                        <div class="text">Hard</div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Difficulty Section -->
+            <div class="diffi_section">
+
+                <h2>Problems :</h2>
+
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                    <div class="accordion-item" data-aos="slide-right" data-aos-easing="ease-in-out">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed easy" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Easy Problems
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                            <div class="accordion-body easy-body">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="slide-right" data-aos-easing="ease-in-out">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed medium" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Medium Problems
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body medium-body">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="slide-right" data-aos-easing="ease-in-out">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed hard" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                Hard Problems
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body hard-body">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        </div>
+
+        <div class="sidebar">
+
+            <div class="status_chart">
+                <div class="chart_heading">
+                    <h3>Progress Status</h3>
+                </div>
+                <div class="chart">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+
+            <div class="sidebar_image">
+                <img src="./images/hero_image.svg" alt="logo">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer_section" id="contact" data-aos="zoom-out">
+
+        <div class="footer_heading">
+
+            <div class="footer_heading_image">
+                <div class="image">
+                    <img src="./images/binary-code.png" alt="logo">
+                </div>
+                <div class="name">
+                    <h1>Saviour 75</h1>
+                </div>
+            </div>
+
+            <div class="footer_heading_content">
+                Explore the ultimate coding interview resource. 75 vital questions, expert answers, and valuable insights at your
+                fingertips. Elevate your coding career with our comprehensive guide,Hope you enjoy to use it in your own way.
+            </div>
+        </div>
+
+        <div class="footer_shortcuts">
+
+            <div class="social_icons">
+
+                <div class="follow_us">
+                    <h2>Follow Us</h2>
+                </div>
+
+                <div class="icons">
+                    <a class="fab fa-facebook" href="https://www.facebook.com/profile.php?id=100086164128411" target="_blank"></a>
+                    <a class="fab fa-linkedin" href="https://www.linkedin.com/in/swapnil-mal-4340a3259/" target="_blank"></a>
+                    <a class="fab fa-github" href="https://github.com/asur1357" target="_blank"></a>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                © 2023 Grind 75, Inc. All rights reserved.
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- AOS plugin -->
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 1500
+        });
+    </script>
+
+    <!-- EASY-MED-HARD % JS -->
+    <script>
+        // Function to create and initialize a circle progress element
+        function initializeCircleProgress(selector, value, fill) {
+            const defaultOptions = {
+                startAngle: -1.55,
+                size: 150,
+            };
+
+            const options = { ...defaultOptions, value, fill };
+
+            const element = $(selector);
+            if (!element.length) return;
+
+            element.circleProgress(options).on('circle-animation-progress', function (event, progress, stepValue) {
+                const $parent = $(this).parent();
+                const $span = $parent.find("span");
+
+                // Update the percentage text
+                $span.text(`${(stepValue * 100).toFixed(0)}%`);
+            });
+        }
+
+        var res = localStorage.getItem('every')
+        var everyRes = JSON.parse(res)
+
+        var easyArr = everyRes[0], mediumArr = everyRes[1], hardArr = everyRes[2]
+        var easyLen = easyArr.length, medLen = mediumArr.length, hardLen = hardArr.length
+
+        var easyDone = 0, medDone = 0, hardDone = 0
+        for (let i = 0; i < easyLen; i++) {
+            if (easyArr[i].status === 'done')
+                easyDone++
+        }
+        var easyValue = easyDone / easyLen
+
+        for (let i = 0; i < medLen; i++) {
+            if (mediumArr[i].status === 'done')
+                medDone++
+        }
+        var medValue = medDone / medLen
+
+        for (let i = 0; i < hardLen; i++) {
+            if (hardArr[i].status === 'done')
+                hardDone++
+        }
+        var hardValue = hardDone / hardLen
+
+
+        let circleOptions = [
+            {
+                className: ".circle",
+                value: easyValue,
+                fill: { gradient: ['#49A74C', '#64ff6a'] },
+            },
+            {
+                className: ".js",
+                value: medValue, // Set the value according to your logic
+                fill: { gradient: ['#ffbe0b', '#ffbe0b'] }, // Different fill colors
+            },
+            {
+                className: ".react",
+                value: hardValue, // Set the value according to your logic
+                fill: { gradient: ['#ff0000', '#f4a448'] }, // Different fill colors
+            }
+        ]
+
+        circleOptions.forEach((option) => {
+            const { className, value, fill } = option;
+            initializeCircleProgress(className + " .bar", value, fill);
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- CHART JS  -->
+    <script>
+        var res = localStorage.getItem('every')
+        var everyRes = JSON.parse(res)
+
+        var easyArr = everyRes[0], mediumArr = everyRes[1], hardArr = everyRes[2]
+        var easyLen = easyArr.length, medLen = mediumArr.length, hardLen = hardArr.length
+
+        var pending = 0, revisit = 0, done = 0
+
+
+        for (let i = 0; i < easyLen; i++) {
+            if (easyArr[i].status === 'pending')
+                pending++
+            else if (easyArr[i].status === 'revisit')
+                revisit++
+            else
+                done++
+        }
+
+        for (let i = 0; i < medLen; i++) {
+            if (mediumArr[i].status === 'pending')
+                pending++
+            else if (mediumArr[i].status === 'revisit')
+                revisit++
+            else
+                done++
+        }
+
+        for (let i = 0; i < hardLen; i++) {
+            if (hardArr[i].status === 'pending')
+                pending++
+            else if (hardArr[i].status === 'revisit')
+                revisit++
+            else
+                done++
+        }
+
+        const charDataSet = {
+            labels: ['Pending', 'Revisit', 'Done'],
+            data: [pending, revisit, done]
+        }
+
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: charDataSet.labels,
+                datasets: [{
+                    label: 'No =>',
+                    data: charDataSet.data,
+                    backgroundColor: [
+                        'rgb(255, 99, 132)',
+                        'rgb(54, 162, 235)',
+                        'rgb(255, 205, 86)'
+                    ],
+                    hoverOffset: 6
+                }]
+            }
+        });
+    </script>
+
+    <script src="./script.js"></script>
+    <script src="./problemDarkmode.js"></script>
+
+    <!-- Sweet Alert CDN -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.min.js"></script>
+
+
+</body>
+
+</html>
